@@ -15,7 +15,12 @@ concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
-# jobs:
-#   lint:
-#     uses: ./.github/workflows/lint.yml
-#     secrets: inherit
+jobs:
+  print-username:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: placeholder
+        run: echo This is a placeholder to prevent a no jobs error
+    uses: ./.github/workflows/lint.yml
+    secrets: inherit
