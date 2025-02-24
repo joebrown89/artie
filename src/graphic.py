@@ -17,8 +17,8 @@ class GUI:
     def __init__(self):
         self.fb = None
         self.mm = None
-        self.screen_width = 640
-        self.screen_height = 480
+        self.screen_width = 720 
+        self.screen_height = 720
         self.bytes_per_pixel = 4
         self.screen_size = self.screen_width * self.screen_height * self.bytes_per_pixel
 
